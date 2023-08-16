@@ -1,0 +1,15 @@
+@use "vars";
+@mixin wrapper {
+  max-width: vars.$contentWidth;
+  margin: 0 auto 100px auto;
+  padding: 0 4%;
+  text-align: center;
+}
+
+@mixin title {
+  display: inline-block;
+  font-size: 2rem;
+  border-bottom: 1px solid #000;
+  margin-bottom: 60px;
+  text-align: center;
+}

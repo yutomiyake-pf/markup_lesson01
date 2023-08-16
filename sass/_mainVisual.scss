@@ -1,0 +1,12 @@
+@use "vars";
+
+.mainImageWrap {
+  margin-bottom: 80px;
+  &__mainImage {
+    width: 100vw;
+    height: 600px;
+    @media screen and (max-width: vars.$spBreakPoint) {
+      height: calc(100vh - 60px);
+    }
+  }
+}

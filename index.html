@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link rel="stylesheet" href="sass/style.css" />
+
+    <title>模写練習</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <a href="#" class="header__logoImage">
+          <img
+            src="public/image/logo.svg"
+            alt="Profile"
+            height="40"
+            width="120"
+          />
+        </a>
+        <nav>
+          <ul class="header__navLinks">
+            <li class="header__navLink">
+              <a href="#about">About</a>
+            </li>
+            <li class="header__navLink">
+              <a href="#bicycle">Bicycle</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="mainImageWrap">
+        <img
+          class="mainImageWrap__mainImage"
+          src="public/image/mainvisual.jpg"
+          alt="メインの自転車の画像"
+        />
+      </div>
+      <section class="about" id="about">
+        <h2 class="about__title">About</h2>
+        <div class="about__content">
+          <img
+            class="about__image"
+            src="public/image/about.jpg"
+            alt="アイコン画像"
+            height="100"
+            width="100"
+          />
+          <div class="about__text">
+            <h3 class="about__name">YUTO MIYAKE</h3>
+            <p>
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="bicycle" id="bicycle">
+        <h2 class="bicycle__title">Bicycle</h2>
+        <ul class="bicycle__imageLists">
+          <li class="bicycle__imageList">
+            <img
+              class="bicycle__image"
+              src="public/image/bicycle1.jpg"
+              alt="自転車の画像"
+            />
+            <h3>テキスト</h3>
+            <p>テキストテキストテキストテキストテキストテキスト</p>
+          </li>
+          <li class="bicycle__imageList">
+            <img
+              class="bicycle__image"
+              src="public/image/bicycle2.jpg"
+              alt="自転車の画像"
+            />
+            <h3>テキスト</h3>
+            <p>テキストテキストテキストテキストテキストテキスト</p>
+          </li>
+          <li class="bicycle__imageList">
+            <img
+              class="bicycle__image"
+              src="public/image/bicycle3.jpg"
+              alt="自転車の画像"
+            />
+            <h3>テキスト</h3>
+            <p>テキストテキストテキストテキストテキストテキスト</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>&copy; 2023 miyake</p>
+    </footer>
+  </body>
+</html>

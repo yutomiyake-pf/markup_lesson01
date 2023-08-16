@@ -1,0 +1,38 @@
+@use "mixins";
+@use "vars";
+
+.bicycle {
+  @include mixins.wrapper;
+
+  &__title {
+    @include mixins.title;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__imageLists {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media screen and (max-width: vars.$spBreakPoint) {
+      justify-content: center;
+    }
+  }
+
+  &__imageList {
+    width: 32%;
+    @media screen and (max-width: vars.$spBreakPoint) {
+      width: 90%;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+}
